@@ -1,43 +1,41 @@
-Awesome! Now let's create a **clean, professional** `README.md` with **screenshots** and clear documentation.  
-
----
-
-# **📜 README.md for Hidden Object Game**  
+# **README.md for Hidden Object Game**  
 > **A React + Ruby on Rails game where players find hidden objects in an image.**
 
 ---
 
-## **📸 Screenshots**
-![Game Screenshot](hidden-object-game/public/game-shot.png)  
+## Screenshots
+![Game Screenshot](hidden-object-game/public/game-shot.png)
 *A rustic-themed hidden object game UI.*
 
 ---
 
-## **🚀 Features**
+##  Features
 ✅ **Find Hidden Objects** – Click on the image to select objects.  
 ✅ **Real-Time Feedback** – Get instant confirmation if your selection is correct.  
 ✅ **Leaderboard** – Tracks fastest players.  
 ✅ **Rustic UI Design** – Styled with a vintage aesthetic.  
 ✅ **Backend Validation** – Ensures fair gameplay.  
+✅ **Fully Tested Backend** – RSpec tests ensure robustness.  
 
 ---
 
-## **🛠️ Tech Stack**
+## Tech Stack
 - **Frontend:** React + Vite  
 - **Backend:** Ruby on Rails  
 - **Database:** PostgreSQL  
 - **Styling:** Custom CSS  
+- **Testing:** RSpec  
 
 ---
 
-## **📦 Installation**
-### **1️⃣ Clone the Repository**
+## Installation
+### Clone the Repository
 ```sh
 git clone https://github.com/yourusername/hidden-object-game.git
 cd hidden-object-game
 ```
 
-### **2️⃣ Install Dependencies**
+###  Install Dependencies
 #### **Backend (Rails)**
 ```sh
 cd hidden-object-backend
@@ -57,22 +55,16 @@ npm run dev
 
 ---
 
-## **🎮 How to Play**
+## *How to Play*
 1️⃣ Click anywhere on the image.  
 2️⃣ Select the correct object from the dropdown.  
 3️⃣ If correct, the object is marked as **found**.  
 4️⃣ Find all objects **as fast as possible** to make the leaderboard!  
 
----
-
-## **🌟 Screenshots**
-| Gameplay | Object Found | Leaderboard |
-|----------|------------|------------|
-| ![Gameplay](./screenshots/gameplay.png) | ![Success](./screenshots/success.png) | ![Leaderboard](./screenshots/leaderboard.png) |
 
 ---
 
-## **🛠️ API Endpoints**
+## API Endpoints
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET`  | `/scores` | Fetch leaderboard data |
@@ -81,37 +73,41 @@ npm run dev
 
 ---
 
-## **📜 License**
-MIT License © 2025 Hidden Object Game Devs  
+## Running Tests
+### RSpec Tests
+The backend is fully tested using **RSpec**.  
 
----
+###  Run All Tests
+```sh
+rspec
+```
 
-## **👥 Contributors**
-- **Your Name** – Developer  
-- **Other Contributors** – Additional Credits  
+### Example Test Output
+```
+GameObject
+  is valid with a name and coordinates
+  is invalid without a name
+  is invalid without coordinates
 
----
+Objects API
+  POST /validate_click returns success if object is found at correct coordinates
+  POST /validate_click returns failure if object is at wrong coordinates
+  POST /validate_click returns failure if object does not exist
+
+Scores API
+  GET /scores returns a list of scores
+  POST /scores creates a new score
+
+Finished in 0.3 seconds (files took 1.2 seconds to load)
+7 examples, 0 failures
+```
+
+###  Running a Specific Test
+To run only **object validation tests**:
+```sh
+rspec spec/models/game_object_spec.rb
+```
+
 
 ## **🔗 Live Demo**
 [👉 Play the Game](https://your-game-url.com)  
-
----
-
-## **Next Steps**
-📌 **Add multiple levels** with different images.  
-📌 **Improve animations** for smoother feedback.  
-📌 **Add sound effects** for object selection.  
-
----
-
-## **📥 Contributing**
-Want to contribute? **Fork the repo, create a branch, and submit a PR!** 🚀  
-
----
-
-### **✅ Final Steps**
-1. **Take screenshots** and save them in `/screenshots/`.  
-2. **Update the GitHub repo** with `README.md`.  
-3. **Push changes** and share your game!  
-
-Let me know if you need further refinements! 🚀📜

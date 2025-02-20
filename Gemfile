@@ -21,3 +21,5 @@ group :development, :test do
     # gem "spring"
   end
 end
+
+gem "rspec-rails", "~> 7.1"
