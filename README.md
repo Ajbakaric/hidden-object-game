@@ -110,4 +110,4 @@ rspec spec/models/game_object_spec.rb
 
 
 ## **🔗 Live Demo**
-[👉 Play the Game](https://your-game-url.com)  
+[👉 Play the Game](https://whimsical-twilight-ad6dc1.netlify.app/)  
