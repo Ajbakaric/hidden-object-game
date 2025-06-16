@@ -1,21 +1,21 @@
-# **README.md for Hidden Object Game**  
+# **Hidden Object Game**  
 > **A React + Ruby on Rails game where players find hidden objects in an image.**
 
 ---
 
-## Screenshots
+## Screenshot
 ![Game Screenshot](hidden-object-game/public/game-shot.png)
 *A rustic-themed hidden object game UI.*
 
 ---
 
 ##  Features
-✅ **Find Hidden Objects** – Click on the image to select objects.  
-✅ **Real-Time Feedback** – Get instant confirmation if your selection is correct.  
-✅ **Leaderboard** – Tracks fastest players.  
-✅ **Rustic UI Design** – Styled with a vintage aesthetic.  
-✅ **Backend Validation** – Ensures fair gameplay.  
-✅ **Fully Tested Backend** – RSpec tests ensure robustness.  
+**Find Hidden Objects** – Click on the image to select objects.  
+ **Real-Time Feedback** – Get instant confirmation if your selection is correct.  
+ **Leaderboard** – Tracks fastest players.  
+ **Rustic UI Design** – Styled with a vintage aesthetic.  
+ **Backend Validation** – Ensures fair gameplay.  
+ **Fully Tested Backend** – RSpec tests ensure robustness.  
 
 ---
 
@@ -107,7 +107,3 @@ To run only **object validation tests**:
 ```sh
 rspec spec/models/game_object_spec.rb
 ```
-
-
-## **🔗 Live Demo**
-[👉 Play the Game](https://whimsical-twilight-ad6dc1.netlify.app/)  
